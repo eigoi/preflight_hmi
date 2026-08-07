@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>UAV Pre-Flight HMI Prototype v0.3</title>
+<title>UAV Pre-Flight HMI Prototype v0.7</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header class="topbar">
   <div>
-    <div class="eyebrow">UAV PRE-FLIGHT HMI / PROTOTYPE v0.3</div>
+    <div class="eyebrow">UAV PRE-FLIGHT HMI / PROTOTYPE v0.7</div>
     <h1>場所別・飛行前確認支援</h1>
     <p class="hero-purpose"><strong>できること：</strong>地図上で飛行経路を描くと、周辺200 mの情報から<strong>「現地で何を確認するか」</strong>を自動表示します。</p>
   </div>
@@ -39,8 +39,10 @@
     <div id="map"></div>
 
     <div id="routeCoach" class="route-coach">
-      <div class="next-action-label">次にすること</div>
-      <button id="drawRouteBtn" class="big-primary">経路を描く</button>
+      <div class="next-action-block">
+        <div class="next-action-label">次にすること</div>
+        <button id="drawRouteBtn" class="big-primary">経路を描く</button>
+      </div>
       <div class="coach-text">
         <strong id="coachTitle">まず飛行経路を描きます</strong>
         <span id="coachBody">ボタンを押して、地図上の通過点を順番にクリックしてください。</span>
